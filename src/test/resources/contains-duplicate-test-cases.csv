@@ -1,0 +1,14 @@
+
+testCaseId,description,nums,expected
+CD01,Duplicate at beginning,1;1;2;3,true
+CD02,Duplicate at end,1;2;3;1,true
+CD03,All unique positive numbers,1;2;3;4,false
+CD04,All values identical,5;5;5;5,true
+CD05,Negative number duplicate,-1;0;-1,true
+CD06,Duplicate zero,0;1;0,true
+CD07,Empty array,,false
+CD08,Single element,42,false
+CD09,Duplicate adjacent elements,1;2;2;3,true
+CD10,Large integer values,2147483647;-2147483648;2147483647,true
+CD11,Unique negative numbers,-1;-2;-3,false
+CD12,Two unique elements,10;20,false
