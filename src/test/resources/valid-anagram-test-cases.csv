@@ -1,0 +1,13 @@
+testCaseId,description,s,t,expected
+VA01,Standard anagram,anagram,nagaram,true
+VA02,Not anagrams,rat,car,false
+VA03,Same string,listen,listen,true
+VA04,Different character frequencies,aab,abb,false
+VA05,Single matching character,a,a,true
+VA06,Single non-matching character,a,b,false
+VA07,Empty strings,<empty>,<empty>,true
+VA08,One empty string,<empty>,a,false
+VA09,Repeated characters,aaa,aaa,true
+VA10,Repeated characters different counts,aaab,aabb,false
+VA11,Rearranged alphabet,abcdefghijklmnopqrstuvwxyz,zyxwvutsrqponmlkjihgfedcba,true
+VA12,Length mismatch,abc,ab,false
