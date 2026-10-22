@@ -1,0 +1,11 @@
+testCaseId,description,nums,expected
+PE01,Standard example,1;2;3;4,24;12;8;6
+PE02,Negative and positive,-1;1;0;-3;3,0;0;9;0;0
+PE03,One zero,1;2;0;4,0;0;8;0
+PE04,Two zeros,0;2;0;4,0;0;0;0
+PE05,Negative numbers,-2;3;-4,-12;8;-6
+PE06,Two elements,2;3,3;2
+PE07,Single element,7,1
+PE08,All ones,1;1;1,1;1;1
+PE09,Negative numbers,-1;-2;-3,6;3;2
+PE10,Empty array,<empty>,<empty>
