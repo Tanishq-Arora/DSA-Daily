@@ -1,25 +1,18 @@
-import org.jetbrains.annotations.NotNull;
+import java.util.Arrays;
 
 public class ValidAnagram {
 
-    public boolean isAnagram(@NotNull String s, String t) {
+    public boolean isAnagram(String s, String t) {
         if (s.length() != t.length()) {
             return false;
         }
 
-        int[] freq = new int[26];
+        char[] arr1 = s.toCharArray();
+        char[] arr2 = t.toCharArray();
 
-        for (int i = 0; i < s.length(); i++) {
-            freq[s.charAt(i) - 'a']++;
-            freq[t.charAt(i) - 'a']--;
-        }
+        Arrays.sort(arr1);
+        Arrays.sort(arr2);
 
-        for (int count : freq) {
-            if (count != 0) {
-                return false;
-            }
-        }
-
-        return true;
+        return Arrays.equals(arr1, arr2);
     }
 }
